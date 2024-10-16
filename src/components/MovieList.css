@@ -1,0 +1,66 @@
+.movie-list {
+  margin-left: 20px;
+  color: white;
+}
+
+.movie-list__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.movie-list__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.movie-list__poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  transition: transform 0.2s;
+  margin-right: 10px;
+}
+
+.movie-list__posterLarge {
+  max-height: 250px;
+}
+
+.movie-list__poster:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+/* MovieList section */
+.movie-list {
+  margin-left: 20px;
+  color: white;
+}
+
+.movie-list__posters {
+  display: flex;
+  overflow-x: scroll;
+  padding: 20px 0;
+  scrollbar-width: none; /* Ẩn thanh cuộn mặc định */
+}
+
+.movie-list__posters::-webkit-scrollbar {
+  display: none; /* Ẩn thanh cuộn trong Webkit */
+}
+
+.movie-list__poster {
+  max-height: 120px;
+  object-fit: cover;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.movie-list__poster:hover {
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  opacity: 1;
+}
+
+.movie-list__posterLarge {
+  max-height: 200px;
+}

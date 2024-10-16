@@ -1,0 +1,9 @@
+/* src/pages/search/Search.css */
+.search-page {
+  padding: 20px;
+}
+
+.search-result-title {
+  color: white;
+  margin-bottom: 20px;
+}

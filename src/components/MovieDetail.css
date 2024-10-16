@@ -1,0 +1,49 @@
+/* src/components/MovieDetail.css */
+.movie-detail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Đảm bảo phủ kín toàn bộ màn hình */
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  color: white;
+  z-index: 1000;
+  overflow-y: auto; /* Cuộn nếu nội dung quá dài */
+}
+
+.movie-detail__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-detail__info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.movie-detail__trailer {
+  flex: 1;
+}
+
+.movie-detail__close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.movie-detail__backdrop {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Thêm bóng đổ */
+}
+
+/* Thêm hiệu ứng khi hover vào nút đóng */
+.movie-detail__close:hover {
+  color: #ff4081; /* Thay đổi màu khi hover */
+}
